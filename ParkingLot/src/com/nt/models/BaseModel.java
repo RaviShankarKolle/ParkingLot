@@ -9,6 +9,25 @@ public abstract class BaseModel {
     private LocalDateTime updatedAt;
     private String createdBy;
     private String updatedBy;
+    
+   
+    
+	public BaseModel() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
+	public BaseModel(int id) {
+        this.id = id;
+    }
+	public BaseModel(int id, LocalDateTime createdAt, LocalDateTime updatedAt, String createdBy, String updatedBy) {
+		super();
+		this.id = id;
+		this.createdAt = createdAt;
+		this.updatedAt = updatedAt;
+		this.createdBy = createdBy;
+		this.updatedBy = updatedBy;
+	}
 	public int getId() {
 		return id;
 	}

@@ -16,9 +16,30 @@ public class ParkingLot extends BaseModel {
 	private List<VehicleType> supportedVehicleType;
 	private SlotAllocationStrategy slotAllocationStrategy;
 	private BillCalculationStrategy billCalculationStrategy;
+	
+	
+	public ParkingLot() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
 	public String getName() {
 		return name;
 	}
+	
+	public ParkingLot(String name, String address, List<ParkingFloor> parkingFloors, ParkingLotStatus parkingLotStatus,
+			List<VehicleType> supportedVehicleType, SlotAllocationStrategy slotAllocationStrategy,
+			BillCalculationStrategy billCalculationStrategy) {
+		super();
+		this.name = name;
+		this.address = address;
+		this.parkingFloors = parkingFloors;
+		this.parkingLotStatus = parkingLotStatus;
+		this.supportedVehicleType = supportedVehicleType;
+		this.slotAllocationStrategy = slotAllocationStrategy;
+		this.billCalculationStrategy = billCalculationStrategy;
+	}
+
 	public void setName(String name) {
 		this.name = name;
 	}
@@ -58,6 +79,8 @@ public class ParkingLot extends BaseModel {
 	public void setBillCalculationStrategy(BillCalculationStrategy billCalculationStrategy) {
 		this.billCalculationStrategy = billCalculationStrategy;
 	}
+	
+	
 	
 	
 	

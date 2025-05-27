@@ -20,7 +20,7 @@ public class LowBillCalculationStrategy implements BillCalculationStrategy {
 				PER_HOUR_CHARGE_4_WHEELER : PER_HOUR_CHARGE_2_WHEELER;
 		
 		double baseCost=costPerHour*totalHours;
-		return baseCost*(baseCost *(INCREMENT_FACTOR * (totalHours-1)));
+		return baseCost+(baseCost *(INCREMENT_FACTOR * (totalHours-1)));
 	}
 
 }

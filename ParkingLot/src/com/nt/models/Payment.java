@@ -40,6 +40,21 @@ public class Payment extends BaseModel {
 	public void setBill(Bill bill) {
 		this.bill = bill;
 	}
+	public Payment(int amount, PaymentMode paymentMode, String transactionNumber, PaymentStatus paymentStatus,
+			Bill bill) {
+		super();
+		this.amount = amount;
+		this.paymentMode = paymentMode;
+		this.transactionNumber = transactionNumber;
+		this.paymentStatus = paymentStatus;
+		this.bill = bill;
+	}
+	public Payment() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
+	
 	
 	
 	

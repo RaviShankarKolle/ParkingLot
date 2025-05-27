@@ -33,6 +33,26 @@ public class ParkingSlot extends BaseModel {
 	public void setParkingSlotStatus(ParkingSlotStatus parkingSlotStatus) {
 		this.parkingSlotStatus = parkingSlotStatus;
 	}
+	public ParkingSlot(int number, VehicleType supportedVehicleType, Vehicle vehicle,
+			ParkingSlotStatus parkingSlotStatus) {
+		super();
+		this.number = number;
+		this.supportedVehicleType = supportedVehicleType;
+		this.vehicle = vehicle;
+		this.parkingSlotStatus = parkingSlotStatus;
+	}
+	public ParkingSlot() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	 public ParkingSlot(int id, int number, VehicleType supportedVehicleType) {
+	        super(id);
+	        this.number = number;
+	        this.supportedVehicleType = supportedVehicleType;
+	        this.parkingSlotStatus = ParkingSlotStatus.AVAILABLE;
+	    }
+	
+	
 	
 
 }
