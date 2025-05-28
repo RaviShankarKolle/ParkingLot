@@ -26,6 +26,7 @@ public class TicketServiceImpl implements TicketService {
 	        this.ticketRepository = ticketRepository;
 	    }
 
+	    @Override
 	    public Ticket createTicket(Vehicle vehicle, int gateId, int parkingLotId, LocalDateTime entryTime) throws ParkingLotNotFoundException, GateNotFoundException, NoParkingSlotAvailableException {
 	        ParkingLot parkingLot = parkingLotRepository.get(parkingLotId);
 	        Gate gate = gateRepository.get(gateId);
